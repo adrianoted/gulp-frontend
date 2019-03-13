@@ -1,0 +1,112 @@
+/*======  MIXINS  (DELETE COMMENT)======*/
+
+//Select The First nth Elements
+@mixin firstNthEls($num) {
+    @if $num==1 {
+        &:first-child {
+            @content;
+        }
+    }
+    @else {
+        &:nth-child(-n + #{$num}) {
+            @content;
+        }
+    }
+}
+
+// ==== Grid System
+@mixin col($width) {
+    @extend %block;
+    width: $width;
+}
+
+@mixin squareSize ($value) {
+    width: $value;
+    height: $value;
+}
+
+@mixin aspectRatio($width, $val1, $val2) {
+    width: $width;
+    height: ($val2 / $val1) * $width;
+}
+
+@mixin aspectRatioRWD($maxWidth, $val1, $val2) {
+    max-width: $maxWidth;
+    width: 100%;
+    height: ($val2 / $val1) * $maxWidth;
+}
+//OUTPUT @include aspectRatioRWD(400px, 4,3);
+
+
+@mixin boxSize ($maxWidth, $height:auto) {
+    max-width: $maxWidth;
+    width: 100%;
+    height: $height;
+}
+
+//Align Center Element (X, Y)
+@mixin translateCtr($position) {
+    @if $position=='vertical' {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    @else if $position=='horizontal' {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translate(-50%);
+    }
+    @else if $position=='both' {
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+@mixin positioning($positioning, $args) {
+    position: $positioning;
+    $offsets: top right bottom left;
+    @each $o in $offsets {
+        $i: index($args, $o);
+        @if $i and $i+1 <=length($args) and type-of(nth($args, $i + 1))==number {
+            #{$o}: nth($args, $i + 1);
+        }
+    }
+}
+
+// ========= To set value of PROPERTIES with EDGES ===== 
+@mixin propVal($props, $edge, $value) {
+    @if ($edge) {
+        #{$props}-#{$edge}: $value;
+    }
+    @else {
+        #{$props}: $value;
+    }
+}
+
+//OUTPUT @include propVal(margin, null, 10px);
+// ========= Basic fontstyle with map of fonts variables ===== 
+@mixin fontStyle($array:null, $arrayKey:null, $size:null, $weight:null) {
+    font-family: mapGen($array, $arrayKey);
+    font-size: $size;
+    font-weight: $weight;
+}
+
+//OUTPUT @include fontStyle($fontFamily, fourth, 18pt, 700);
+//INCLUDE FONTS (FONT-FACE)
+@mixin font-face($fontPath, $fileName, $fontName) {
+    $filepath: $fontPath + $fileName;
+    @font-face {
+        font-family: "#{$fontName}";
+        src: url($filepath + ".eot");
+        src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff'), url($filepath + ".ttf") format('truetype'), url($filepath + ".svg#" + $fontName + "") format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+//ESEMPIO: @include font-face('../fonts/librebaskerville-italic/', 'librebaskerville-italic-webfont', 'librebaskerville-italic');

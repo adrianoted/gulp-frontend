@@ -1,0 +1,9 @@
+/*======  GRID  ======*/
+.table { @extend %tbl;}
+.cell { @extend %tblCll;}
+
+.row { @extend %clearfix; }
+.block{ @extend %block;}
+
+.col-50{ @include col(50%);}
+.col-100{ @include col(100%);}

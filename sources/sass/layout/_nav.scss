@@ -1,0 +1,13 @@
+/*======  NAV  ======*/
+#main-navbar {
+    width: 100%;
+    display: table;
+    height: auto;
+    background-color: mapSub($colors, nav, bg);
+    padding: 10px;
+    li {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 5px;
+    }
+}

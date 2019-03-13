@@ -1,0 +1,13 @@
+{
+    "nav": {
+        "links": [{
+                "url": "/",
+                "title-name": "Home"
+            },
+            {
+                "url": "/next.html",
+                "title-name": "Next"
+            }
+        ]
+    }
+}

@@ -1,0 +1,37 @@
+{
+	"index": {
+		"title": "Index"
+	},
+	"nav": {
+		"links": [
+			{
+				"url": "/",
+				"title-name": "Home"
+			},
+			{
+				"url": "/next.html",
+				"title-name": "Next"
+			}
+		]
+	},
+	"next": {
+		"title": "Next"
+	},
+	"sidebar": {
+		"title": "Sidebar Links",
+		"links": [
+			{
+				"name": "Link 1",
+				"url": "#"
+			},
+			{
+				"name": "Link 2",
+				"url": "#"
+			},
+			{
+				"name": "Link 3",
+				"url": "#"
+			}
+		]
+	}
+}

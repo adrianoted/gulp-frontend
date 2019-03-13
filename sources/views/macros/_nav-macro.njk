@@ -1,0 +1,7 @@
+  <!-- macro functionName() -->
+{% macro active(activePage='index') %}
+  <nav>
+
+<a href="/" class="{%if activePage == 'index' %} active {% endif %}">Index</a>
+  </nav>
+{% endmacro %}

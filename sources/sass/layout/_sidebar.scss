@@ -1,0 +1,17 @@
+/*======  SIDEBAR  ======*/
+#sidebar {
+    width:20%;
+    height: 100%;
+    padding: 10px;
+    background-color: mapSub($colors, gen, bg);
+    color: mapSub($colors, gen, clr);
+
+    height: 100vh;
+
+    .title { border-bottom: 1px solid; padding: 5px 0 10px;}
+    .list {
+        margin-top: 20px;
+        li { font-size: 14px;}
+    }
+}
+

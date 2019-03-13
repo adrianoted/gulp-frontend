@@ -1,0 +1,17 @@
+/*======  GENERAL  ======*/
+#{$a-tags} {
+    color: inherit;
+    text-decoration: none;
+}
+/*:::: fonticons ::::*/
+// [class^="icon-"]:before, [class*=" icon-"]:before { width: auto;}
+
+.clear { clear: both;}
+.right { float: right;}
+
+/* Main Content */
+#sidebar, #content {
+    float: left;
+}
+
+.title { margin-bottom: 10px;}

@@ -1,0 +1,21 @@
+/*======  COMMONS (PLACEHOLDERS) ======*/
+%clearfix:after {
+    display:block;
+    clear:both;
+    content:'';
+}
+%block {
+    float: left;
+    display: block;
+}
+
+%tbl {
+    width: 100%;
+    height: auto;
+    display: table;
+}
+
+%tblCll {
+    display: table-cell;
+    vertical-align: middle;
+}

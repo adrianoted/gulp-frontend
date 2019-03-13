@@ -1,0 +1,16 @@
+{%- import "macros/_forms-macro.njk" as forms -%}
+
+<nav id="main-navbar">
+<div class="cell">
+    <ul>
+      {% for link in nav.links -%}
+        <li>
+        <a href="{{link.url}}">{{link['title-name']}}</a>
+      </li>
+      {% endfor -%}
+    </ul>
+</div>
+<div class="cell">
+   {{forms.inputBox(class="right", label="Search", labelFor="Label", type="search" )}}
+</div>
+</nav>

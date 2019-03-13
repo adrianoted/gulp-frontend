@@ -1,0 +1,392 @@
+/*======  VARIABLES (DELETE COMMENT)======*/
+/*======  FUNCTIONS  (DELETE COMMENT)======*/
+.class-name-facebook:hover {
+  background-color: #3b5998;
+}
+
+.class-name-google:hover {
+  background-color: #dd4b39;
+}
+
+.class-name-twitter:hover {
+  background-color: #00aced;
+}
+
+.class-name-pinterest:hover {
+  background-color: #cb2027;
+}
+
+/*======  MIXINS  (DELETE COMMENT)======*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: baseline;
+  outline: 0;
+  frameborder: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html,
+body {
+  -webkit-overflow-scrolling: touch !important;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+}
+
+html {
+  overflow: auto;
+  width: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a:active,
+a:hover,
+a:focus {
+  outline: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/*======  GENERAL  ======*/
+a, a:active, a:hover, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*:::: fonticons ::::*/
+.clear {
+  clear: both;
+}
+
+.right {
+  float: right;
+}
+
+/* Main Content */
+#sidebar, #content {
+  float: left;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+/*======  COMMONS (PLACEHOLDERS) ======*/
+.row:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.block, .col-50, .col-100 {
+  float: left;
+  display: block;
+}
+
+.table {
+  width: 100%;
+  height: auto;
+  display: table;
+}
+
+.cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*** Buttons ***/
+.btn {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+/*======  GRID  ======*/
+.col-50 {
+  width: 50%;
+}
+
+.col-100 {
+  width: 100%;
+}
+
+/*======  NAV  ======*/
+#main-navbar {
+  width: 100%;
+  display: table;
+  height: auto;
+  background-color: #f1c971;
+  padding: 10px;
+}
+
+#main-navbar li {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+/*======  SIDEBAR  ======*/
+#sidebar {
+  width: 20%;
+  height: 100%;
+  padding: 10px;
+  background-color: #1a232f;
+  color: #ededed;
+  height: 100vh;
+}
+
+#sidebar .title {
+  border-bottom: 1px solid;
+  padding: 5px 0 10px;
+}
+
+#sidebar .list {
+  margin-top: 20px;
+}
+
+#sidebar .list li {
+  font-size: 14px;
+}
+
+/*======  CONTENT  ======*/
+#content {
+  width: 80%;
+  display: block;
+  padding: 10px;
+}
+
+/*======  FOOTER  ======*/
+/*======  FORM  ======*/
+.box {
+  display: table;
+  border: 2px solid white;
+}
+
+.box .body {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 300px;
+  background-color: #999999;
+}
+
+/*======  FORM  ======*/
+/*======  TABLE  ======*/
+/*======  ACCORDION  ======*/
+/*======  MODAL  ======*/
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 7000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal.open {
+  display: block;
+}
+
+.modal-box {
+  max-width: 500px;
+  width: 100%;
+  height: 375px;
+  color: #ededed;
+  position: absolute;
+}
+
+.modal-box [class^="modal-"] {
+  padding: 10px;
+}
+
+.modal-content {
+  width: 100%;
+  height: 80%;
+  display: block;
+  border: 0;
+  background-color: #566e6e;
+}
+
+.modal-footer {
+  width: 100%;
+  height: 20%;
+  display: table;
+  background-color: #232c2c;
+}
+
+/*# sourceMappingURL=../maps/main.css.map */

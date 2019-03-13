@@ -1,0 +1,35 @@
+/*======  VARIABLES (DELETE COMMENT)======*/
+$a-tags: 'a, a:active, a:hover, a:visited';
+
+//=======  Maps (SAMPLES) ========
+$colors: (
+    gen:(
+        bg:(rgba(26, 35, 47, 1)),
+        bgModal:(rgb(86, 110, 110)),
+        bgModalFooter:(rgb(35, 44, 44)),
+        clr:(#ededed),
+    ),
+    nav:(
+        bg:(rgba(241, 201, 113, 1)),
+        clr:(#ededed)
+    ),
+    sidebar:(
+        bg:(rgba(26, 35, 47, 1)),
+        clr:(rgba(53, 71, 152, 1))
+    ),
+    btn:(
+        bg:(rgb(28, 224, 28))
+    ),
+    grayscale:(
+        first: (#666666), 
+        second: (#999999), 
+        third: (#ededed)
+    ) 
+);
+$fontFamily: (
+    first: ("Titillium Web", sans-serif), 
+    second: ("Fira sans", sans-serif), 
+    third: (Merriweather, sans-serif), 
+    fourth: ("Pathway Gothic One", sans-serif), 
+    fifth: ("Yanone Kaffeesatz", sans-serif)
+);

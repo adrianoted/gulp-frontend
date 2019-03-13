@@ -1,0 +1,13 @@
+/*======  FORM  ======*/
+.box { 
+     display: table;
+     border: 2px solid lighten(mapSub($colors, grayscale, third), 30%);
+    .body { 
+        display:table-cell; 
+        vertical-align: middle;
+        text-align: center;
+        
+        height: 300px;
+        background-color: mapSub($colors, grayscale, second);
+    }
+}

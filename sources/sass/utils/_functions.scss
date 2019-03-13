@@ -1,0 +1,26 @@
+/*======  FUNCTIONS  (DELETE COMMENT)======*/
+
+//========  Map General - Returns specific variable in array
+@function mapGen($array, $key) {
+    @return map-get($array, $key);
+}
+
+//OUTPUT "mapGen($fontFamily,first)"
+// Map Subsets - Return subsets variables within array 
+@function mapSub($array, $key, $variant:null) {
+    @if ($variant !=null) {
+        @return map-get(map-get($array, $key), $variant);
+    }
+    @else {
+        @return mapGen;
+    }
+}
+
+// *+++++ ESEMPIO  Data Map con @each
+$sampleMap: ( facebook: #3b5998, google: #dd4b39, twitter: #00aced, pinterest: #cb2027);
+@each $key,
+$value in $sampleMap {
+    .class-name-#{$key}:hover {
+        background-color: $value;
+    }
+}

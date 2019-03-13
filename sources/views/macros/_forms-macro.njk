@@ -1,0 +1,29 @@
+{% macro inputBox(class, label, labelFor, name, type ='text', value, dataAttr, dataVal, attr ) -%}
+<div class="input-box {{class}}">
+  <div class="input">
+    {% if labelFor -%}
+    <label for="{{ labelFor }}">{{ label }}</label>
+    {% else -%}
+    <label>{{ label }}</label>
+    {% endif -%}
+    {% if dataAttr %}
+    <input type="{{ type }}" name="{{ name }}" id="{{ name }}" value="{{ value | escape }}" data{{dataAttr}}="{{dataVal}}" {{attr}}/>
+    {%- else -%}
+    <input type="{{ type }}" name="{{ name }}" id="{{ name }}" value="{{ value | escape }}" {{attr}}/>
+    {%- endif -%}
+  </div>
+</div>
+{%- endmacro -%}
+
+{% macro label( label, labelFor) %}
+ {%- if labelFor %}
+    <label for="{{ labelFor }}">{{ label }}</label>
+{%- else -%}
+  <label>{{ label }}</label>
+{%- endif -%}
+
+{%- endmacro -%}
+
+{% macro input( name, type='text', value, attr, dataAttr, dataVal ) -%}
+<input type="{{ type }}" data-{{dataAttr}}="{{dataVal}}" name="{{ name }}" id="{{ name }}" value="{{ value | escape }}" {{attr}}/>
+{%- endmacro -%}

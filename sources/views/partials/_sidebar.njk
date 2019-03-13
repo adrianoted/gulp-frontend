@@ -1,0 +1,8 @@
+<aside id="sidebar">
+    <h1 class="title">{{sidebar.title}}</h1>
+    <ul class="list">
+      {% for link in sidebar.links -%}
+        <li><a href="{{link.url}}">{{link.name}}</a></li>
+    {% endfor -%}
+    </ul>
+</aside>

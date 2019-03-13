@@ -1,0 +1,13 @@
+{% macro modal(class, btnText) %}
+<div class="modal {{class}}">
+    <div class="modal-box">
+        <div class="modal-content">
+            You may encounter an error when typing when typing  http-server -p 3000. This is because the server is still running on the port (in this case :3000). 
+            So you have to kill it manually.In terminal type netstat -an to see how many service are running (optional). 
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary closeBtn">{{btnText}}</button>
+        </div>
+    </div>
+</div>
+{%- endmacro -%}

@@ -1,0 +1,17 @@
+{% set title = 'Index' %}
+{% extends "_layout.njk" %}
+{% block content %}
+{%- import "macros/_modal-macro.njk" as cPan -%}
+
+<section id="content">
+    <h1 class="title">{{index.title}} </h1>
+
+    <div class="box col-100">
+        <div class="body">
+            <button class="btn btn-primary modalTrigger">Open Modal</button> 
+        </div>  
+    </div> 
+</section>
+
+{{cPan.modal(class="modal-index", btnText = "Close Modal" )}}
+{% endblock %}
