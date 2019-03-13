@@ -1,4 +1,4 @@
-Gulp configuration for a Frontend UI worklow. This starter kit was intended to experiment  some "weird" dev tools together. 
+Gulp configuration for a Frontend UI worklow. This starter kit was intended to experiment  some "weird" tools together. 
 
 ## Overview
 The idea behind is to separate the content, the logic and the template. The `content.json` file is generated dynamically by the Gulp task. This is the result of the union between the partial files contained in the `partials folder`. Here you can split he content in many JSON files to store info such as menu items, sidebar links, paragraphs and so on.   

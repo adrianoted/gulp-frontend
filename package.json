@@ -1,7 +1,7 @@
 {
   "name": "gulp-frontend",
   "version": "1.0.0",
-  "description": "Gulp configuration for a Frontend UI worklow. This starter kit was intended to experiment some 'weird' dev tools together",
+  "description": "Gulp configuration for a Frontend UI worklow. This starter kit was intended to experiment some 'weird' tools together",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
