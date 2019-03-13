@@ -1,11 +1,11 @@
 Gulp configuration for a Frontend UI worklow. This starter kit was intended to experiment  some "weird" tools together. 
 
 ## Overview
-The idea behind is to separate the content, the logic and the template. The `content.json` file is generated dynamically by the Gulp task. This is the result of the union between the partial files contained in the `partials folder`. Here you can split he content in many JSON files to store info such as menu items, sidebar links, paragraphs and so on.   
-Those info are rendered dynamically by the Template Engine `Nunjucks` with iterpolation. The `views folder` contains the `_layout.njk` which is the base partial included in all pages.   
+The idea behind is to separate the content, the logic and the template. The `content.json` file is generated dynamically by the `content task`. This is the result of the union between the partial files contained in the `partials folder`. Here you can split the content in many JSON files to store info such as menu items, sidebar links, paragraphs and so on.   
+Those infos are rendered dynamically by the Template Engine `Nunjucks` with interpolation. The `views folder` contains the `_layout.njk` which is the base partial included in all pages (or wherever you want).   
 
 ## Gulp Config
-There are two main task: one concerns the static files like libraries (bootstrap) or the content in he JSON files. Every time you rebuild the static resources you need to delete the content.json file and the rebuild it.
+There are two main tasks: one concerns the static files like libraries (bootstrap) or the content in he JSON files. Every time you rebuild the static resources you need to delete the content.json file and the rebuild it.
 Both JS and CSS are compiled with separated vendors file.
 
 #### Dev
