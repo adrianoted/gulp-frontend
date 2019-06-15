@@ -18,7 +18,7 @@ Both JS and CSS are compiled with separated vendors file.
 - NODE_ENV=prod gulp statics
 - NODE_ENV=prod gulp   
   
-Run `gulp pre:statics` to remove `content.json` file then recreate it with `gulp statics`. This operations is needed only when content in JSON changes or is added a vendor libraries.
+Run `gulp pre:statics` to remove `content.json` file then recreate it with `gulp statics`. This operation is needed only when content in JSON changes or is added a vendor libraries.
 
 
 ## Folder Structure
